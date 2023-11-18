@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car-rent</title>
     
-    <script type="module" crossorigin src="/assets/index-de6bc370.js"></script>
-    <link rel="stylesheet" href="/assets/index-9a9d287f.css">
+    <script type="module" crossorigin src="/assets/index-542353c7.js"></script>
+    <link rel="stylesheet" href="/assets/index-f2f60d20.css">
   </head>
-  <body class="bg-background overflow-x-hidden min-w-fit">
+  <body class="bg-background">
     <div class="-z-10 absolute right-0 top-0 hidden lg:block">
       <logo-svg class="
       absolute fill-background-secondary opacity-30 rotate-12
@@ -38,7 +38,8 @@
           <a class="hover:text-accent transition-colors duration-200 ease-in-out" href="#why-choose-us">Why choose us</a>
           <a class="hover:text-accent transition-colors duration-200 ease-in-out" href="#our-fleet">Rental deals</a>
         </nav>
-        <button id="nav-bar-open" class="stroke-font w-8 mx-8 block lg:hidden fixed right-0 z-20">
+        <!--
+        <button id="nav-bar-open" class="stroke-font w-8 block lg:hidden fixed right-0 z-20">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <g>
               <path d="M4 18L20 18" stroke-width="2" stroke-linecap="round"></path>
@@ -47,27 +48,27 @@
             </g>
           </svg>
         </button>
-        <empty class="hidden lg:block"></empty>
+        -->
       </div>
     </header>
 
     <main>
 
-      <section class="my-20 lg:my-32 px-5 sm:px-10 md:px-16 xl:px-24" id="hero">
+      <section class="my-20 lg:my-32 px-2 sm:px-10 md:px-16 xl:px-24" id="hero">
         <div class="flex flex-col gap-8 overflow-hidden">
           <div class="block lg:hidden">
-            <logo-svg class="absolute fill-background-secondary opacity-20 rotate-12
+            <logo-svg class="hidden absolute fill-background-secondary opacity-20 rotate-12
             aspect-square w-full sm:w-[80%] md:w-[70%] top-20 sm:top-5 md:top-8 left-8 md:left-24"></logo-svg>
-            <img class="-scale-x-100 mx-auto w-full sm:w-[80%] md:w-[70%]" src="/assets/cover_car.png" alt="Picture of a car">
+            <img class="hidden -scale-x-100 mx-auto w-[full] sm:w-[80%] md:w-[70%]" src="/assets/cover_car.png" alt="Picture of a car">
           </div>
           <h1 class="font-semibold text-center lg:text-left text-2xl sm:text-3xl xl:text-4xl leading-none"><div class="overflow-hidden inline-flex"><span class="inline-block" id="hero-find">Find,&nbsp;</span></div><div class="overflow-hidden inline-flex"><span class="inline-block" id="hero-book"> book</span></div><br><div class="overflow-hidden inline-flex"><span class="inline-block" id="hero-rent">rent <span class="text-accent">utility vehicles</span><br>in no time</span></span></div></h1>
           <h3 id="hero-subtext" class="font-light text-font-secondary text-md md:text-lg text-center lg:text-left">The most complete rental offers for utility vehicles</h3>
           <mobile-badges class="animate-reveal absolute invisible lg:static lg:visible"></mobile-badges>
-          <booking-widget></booking-widget>
+          <booking-widget class="hidden"></booking-widget>
         </div>
       </section>
 
-      <section id="how-it-works" class="relative mb-32 md:my-40 xl:my-52 px-5 sm:px-10 md:px-16 xl:px-24 flex flex-col items-center">
+      <section id="how-it-works" class="relative mb-32 md:my-40 xl:my-52 px-2 sm:px-10 md:px-16 xl:px-24 flex flex-col items-center">
         <section-title title="how it works"></section-title>
         <h3 class="text-xl md:text-2xl font-medium my-12 text-center lg:text-left">Rent by following 3 simple steps</h3>
         <div class="scroll-anim mt-12 mb-48 md:mb-60 lg:mb-72 w-full flex flex-col lg:flex-row justify-center gap-12 lg:gap-0 lg:justify-around items-center">
@@ -138,7 +139,7 @@
         </div>
       </section>
 
-      <section id="why-choose-us" class="flex flex-col lg:flex-row gap-8 items-center my-32 md:my-52 px-5 sm:px-10 md:px-16 xl:px-24 lg:pl-0 xl:pl-0">
+      <section id="why-choose-us" class="flex flex-col lg:flex-row gap-8 items-center my-32 md:my-52 px-2 sm:px-10 md:px-16 xl:px-24 lg:pl-0 xl:pl-0">
         <div class="hidden lg:block flex-1 -scale-x-100 mt-32">
           <img src="/assets/black_truck.png" alt="A black truck">
         </div>
@@ -189,9 +190,9 @@
         </div>
       </section>
 
-      <section id="our-fleet" class="w-full my-32 md:my-20 px-5 sm:px-10 md:px-16 lg:px-24 xl:px-56">
+      <section id="our-fleet" class="w-full my-32 md:my-20 px-2 sm:px-10 md:px-16 lg:px-24 xl:px-56">
         <section-title class="bg-accent text-secondary" title="our fleet"></section-title>
-        <div class="w-fit px-6 py-4 mx-auto my-24 bg-background rounded-xl shadow-[-8px_8px_32px_8px_rgba(0,0,0,0.3)]">
+        <div class="px-6 py-4 mx-auto my-24 bg-background rounded-xl shadow-[-8px_8px_32px_8px_rgba(0,0,0,0.3)]">
           <div class="flex flex-col lg:flex-row h-full items-center">
             <div id="carousel-imgs" class="lg:flex-1 h-64 lg:h-96 px-8 overflow-hidden">
               <img class="object-contain mx-auto lg:mx-0 h-full" src="/assets/caroussel_image.png" alt="A vehicle">
@@ -320,7 +321,7 @@
         </div>
       </section>
 
-      <section id="testimonials" class="bg-accent my-24 p-5 sm:p-10 md:p-16">
+      <!--<section id="testimonials" class="bg-accent my-24 p-2 sm:p-10 md:p-16">
         <section-title-inverted title="Testimonials"></section-title-inverted>
         <h1 class="text-secondary text-center text-2xl font-medium my-12">What people say about us</h1>
         <div class="absolute left-0 right-0 flex gap-testimonials overflow-x-hidden">
@@ -348,11 +349,10 @@
           </ul>
         </div>
         <div class="h-testimonials">
-          <!-- A bit of a hack -->
         </div>
-      </section>
+      </section>-->
 
-      <section id="download-app" class="relative flex flex-col lg:flex-row justify-between items-stretch px-5 sm:px-10 md:px-16 xl:px-24">
+      <section id="download-app" class="relative flex flex-col lg:flex-row justify-between items-stretch px-2 sm:px-10 md:px-16 xl:px-24">
         <div class="flex flex-col mb-8 md:mb-16 lg:mb-0 gap-4 md:gap-8 items-center justify-between lg:items-start">
           <section-title title="download"></section-title>
           <g class="flex flex-col gap-6">
@@ -374,7 +374,7 @@
 
     </main>
 
-    <footer class="bg-secondary px-24 py-12 text-background">
+    <footer class="bg-secondary px-8 md:px-24 py-12 text-background">
       <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 mb-24">
         <g class="flex-grow-[2]">
           <div class="flex items-center gap-2 font-semibold text-lg lg:mb-8">
